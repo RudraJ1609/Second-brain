@@ -1,0 +1,54 @@
+# Secrets — never commit API keys
+.env
+.env.local
+.env.*.local
+*.pem
+credentials.json
+
+# Python / virtualenvs
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+ENV/
+*.egg-info/
+.eggs/
+dist/
+build/
+pip-wheel-metadata/
+
+# Model / embedding caches (large; regenerate locally)
+.cache/
+*.pt
+*.bin
+*.safetensors
+sentence-transformers/
+models/
+huggingface/
+.huggingface/
+transformers_cache/
+torch_cache/
+.torch/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+*.tmp
+
+# Local scratch / test junk
+*.log
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.streamlit/secrets.toml
